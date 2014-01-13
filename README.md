@@ -1,4 +1,4 @@
-biz.jmaconsulting.sigs
-======================
+Email Signatures
+================
 
-CiviCRM extension to provide email signatures including images 
+CiviCRM extension to provide email signatures including images.
