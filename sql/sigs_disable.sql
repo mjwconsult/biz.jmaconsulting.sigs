@@ -1,0 +1,1 @@
+UPDATE `civicrm_custom_group` SET `is_active` = 0 WHERE  name = 'Email_Signatures';
