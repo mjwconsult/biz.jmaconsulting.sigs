@@ -1,1 +1,1 @@
-UPDATE `civicrm_custom_group` SET `is_active` = 1 WHERE  name = 'Email_Signatures';
+UPDATE `civicrm_custom_group` SET `is_active` = 1 WHERE  name = 'email_signatures';

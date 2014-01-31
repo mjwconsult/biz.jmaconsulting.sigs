@@ -4,7 +4,7 @@ ALTER TABLE `civicrm_value_email_signatures`
 
 DROP TABLE IF EXISTS `civicrm_value_email_signatures`;
 
-SELECT @cGroupId := id FROM civicrm_custom_group WHERE name = 'Email_Signatures';
+SELECT @cGroupId := id FROM civicrm_custom_group WHERE name = 'email_signatures';
 
 DELETE FROM `civicrm_custom_field` WHERE `custom_group_id` = @cGroupId;
 
