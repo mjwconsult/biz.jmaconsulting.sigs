@@ -18,3 +18,5 @@ Users who want to be able to insert an image of their signature should edit thei
 Then when composing an image they can insert the Signature image token. The signature image file will be properly inserted into the outgoing email. 
 
 Email templates containing the token can be saved and shared among users and the email sender's own signatures will be pulled in when emails from those templates are sent.
+
+IMPORTANT NOTE: To allow users to view the Signature Image in their mails, you need to grant the 'CiviCRM: access uploaded files' permission to Authenticated and Anonymous users.
