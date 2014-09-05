@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <extension key="biz.jmaconsulting.sigs" type="module">
-  <downloadUrl>https://github.com/JMAConsulting/biz.jmaconsulting.sigs/archive/v1.0.zip</downloadUrl>
+  <downloadUrl>https://github.com/JMAConsulting/biz.jmaconsulting.sigs/archive/v1.1.zip</downloadUrl>
   <file>sigs</file>
   <name>Email Signatures</name>
   <description>This extension allows you to upload an image that can be used as a token while sending emails in order to display your signature.</description>
@@ -9,16 +9,17 @@
     <author>JMA Consulting</author>
     <email>joe.murray@jmaconsulting.biz</email>
   </maintainer>
-  <releaseDate>2014-01-31</releaseDate>
-  <version>1.0</version>
+  <releaseDate>2014-09-05</releaseDate>
+  <version>1.1</version>
   <develStage>stable</develStage>
   <compatibility>
     <ver>4.3</ver>
     <ver>4.4</ver>
+    <ver>4.5</ver>
   </compatibility>
   <urls>
     <url desc="Support">https://github.com/JMAConsulting/biz.jmaconsulting.sigs/issues?state=open</url>
-    <url desc="Documentation">https://github.com/JMAConsulting/biz.jmaconsulting.sigs/blob/1.0/README.md</url>
+    <url desc="Documentation">https://github.com/JMAConsulting/biz.jmaconsulting.sigs/blob/1.1/README.md</url>
   </urls>
   <comments></comments>
   <civix>
