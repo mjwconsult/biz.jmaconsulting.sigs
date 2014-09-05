@@ -87,12 +87,11 @@ function sigs_civicrm_tokens(&$tokens) {
  */
 function sigs_civicrm_tokenValues(&$values, &$contactIDs, $job = null, $tokens = array()) {
   if ($_SESSION['CiviCRM']['userID']) { 
-    $entity = CRM_Core_DAO::getFieldValue('CRM_Core_DAO_CustomField', 'signature_image', 'id', 'name');
-    $config = CRM_Core_Config::singleton();
-    $fileID = CRM_Core_BAO_CustomValueTable::getEntityValues($_SESSION['CiviCRM']['userID'], NULL, array($entity));
+    $imageId = CRM_Core_DAO::singleValueQuery('SELECT signature_image  FROM civicrm_value_email_signatures WHERE entity_id = %1', 
+      array(1 => array($_SESSION['CiviCRM']['userID'], 'Integer')));
     foreach ($contactIDs as $contactID) {
-      if (CRM_Utils_Array::value($entity, $fileID)) {
-        $url = CRM_Utils_System::url('civicrm/file', "reset=1&id={$fileID[$entity]}&eid={$_SESSION['CiviCRM']['userID']}", TRUE, NULL, NULL, TRUE);
+      if ($imageId) {
+        $url = CRM_Utils_System::url('civicrm/file', "reset=1&id={$imageId}&eid={$_SESSION['CiviCRM']['userID']}", TRUE, NULL, NULL, TRUE);
         $values[$contactID]['contact.signature'] = '<img src="' .$url. '"></img>';
       }
       else {
