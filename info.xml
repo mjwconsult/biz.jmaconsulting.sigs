@@ -13,16 +13,20 @@
   <version>1.1</version>
   <develStage>stable</develStage>
   <compatibility>
-    <ver>4.3</ver>
-    <ver>4.4</ver>
-    <ver>4.5</ver>
+    <ver>5.58</ver>
   </compatibility>
   <urls>
     <url desc="Support">https://github.com/JMAConsulting/biz.jmaconsulting.sigs/issues?state=open</url>
     <url desc="Documentation">https://github.com/JMAConsulting/biz.jmaconsulting.sigs/blob/1.0/README.md</url>
   </urls>
-  <comments></comments>
+  <comments/>
   <civix>
     <namespace>CRM/Sigs</namespace>
+    <format>23.02.1</format>
   </civix>
+  <classloader>
+    <psr0 prefix="CRM_" path="."/>
+    <psr4 prefix="Civi\" path="Civi"/>
+  </classloader>
+  <upgrader>CRM_Sigs_Upgrader</upgrader>
 </extension>
